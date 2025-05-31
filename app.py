@@ -18,7 +18,7 @@ penetracion_mensaje = pd.read_csv("08_Penetracion_Mensaje.csv")
 
 # Gráfico 1 - Importaciones
 st.subheader("Evolución de importaciones de productos asiáticos (2020-2025)")
-fig1 = px.line(importaciones, x="Año", y="Importaciones (USD)", color="País", markers=True)
+fig1 = px.line(importaciones, x="Ano", y="Importaciones (USD)", color="Pais", markers=True)
 st.plotly_chart(fig1, use_container_width=True)
 
 # Gráfico 2 - Segmentación por tipo de cocina
