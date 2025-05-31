@@ -58,9 +58,13 @@ fig6 = px.bar(
 st.plotly_chart(fig6, use_container_width=True)
 
 # Gráfico 7 - Captación de perfiles clave
-st.subheader("Nivel de captación de perfiles clave por país y tipo de restaurante")
-fig7 = px.bar(captacion_perfiles, x="País", y="Nivel de Captación (%)", color="Tipo de Restaurante", barmode="group")
-st.plotly_chart(fig7, use_container_width=True)
+fig7 = px.bar(
+    captacion_perfiles,
+    x="País",
+    y="Nivel de Captación (%)",
+    color="Perfil Clave",
+    barmode="group"
+)
 
 # Gráfico 8 - Penetración del mensaje
 st.subheader("Nivel de penetración del mensaje por segmento y país")
