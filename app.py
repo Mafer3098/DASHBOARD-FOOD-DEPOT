@@ -23,7 +23,7 @@ st.plotly_chart(fig1, use_container_width=True)
 
 # Gráfico 2 - Segmentación por tipo de cocina
 st.subheader("Segmentación de restaurantes por especialización de cocina")
-fig2 = px.bar(segmentacion, x="País", y="Cantidad", color="Tipo de Cocina", barmode="group")
+fig2 = px.bar(segmentacion, x="País", y="Cantidad de Restaurantes", color="Cocina", barmode="group")
 st.plotly_chart(fig2, use_container_width=True)
 
 # Gráfico 3 - Edades de dueños
