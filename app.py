@@ -67,6 +67,10 @@ fig7 = px.bar(
 )
 
 # Gráfico 8 - Penetración del mensaje
-st.subheader("Nivel de penetración del mensaje por segmento y país")
-fig8 = px.bar(penetracion_mensaje, x="Segmento", y="Penetración (%)", color="País", barmode="group")
-st.plotly_chart(fig8, use_container_width=True)
+fig8 = px.bar(
+    penetracion_mensaje,
+    x="Segmento",
+    y="Penetración del Mensaje (%)",
+    color="País",
+    barmode="group"
+)
