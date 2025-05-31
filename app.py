@@ -28,7 +28,7 @@ st.plotly_chart(fig2, use_container_width=True)
 
 # Gráfico 3 - Edades de dueños
 st.subheader("Distribución de edades de dueños de restaurantes por país")
-fig3 = px.box(edades, x="País", y="Edad", points="all")
+fig3 = px.box(edades, x="País", y="Edad Dueño", points="all")
 st.plotly_chart(fig3, use_container_width=True)
 
 # Gráfico 4 - Importadores por volumen
