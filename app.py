@@ -48,8 +48,13 @@ fig5 = px.bar(
 st.plotly_chart(fig5, use_container_width=True)
 
 # Gráfico 6 - Frecuencia de compra
-st.subheader("Frecuencia de compra por tipo de restaurante")
-fig6 = px.bar(frecuencia_compra, x="País", y="Frecuencia Promedio", color="Tipo de Restaurante", barmode="group")
+fig6 = px.bar(
+    frecuencia_compra,
+    x="País",
+    y="Porcentaje",
+    color="Tipo de Restaurante",
+    barmode="group"
+)
 st.plotly_chart(fig6, use_container_width=True)
 
 # Gráfico 7 - Captación de perfiles clave
