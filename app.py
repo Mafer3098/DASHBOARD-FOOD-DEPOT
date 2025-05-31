@@ -32,8 +32,9 @@ fig3 = px.box(edades, x="País", y="Edad Dueño", points="all")
 st.plotly_chart(fig3, use_container_width=True)
 
 # Gráfico 4 - Importadores por volumen
-st.subheader("Cantidad de empresas importadoras por volumen de compra")
-fig4 = px.bar(importadores, x="País", y="Cantidad de Importadores", color="Volumen de Compra", barmode="stack")
+importadores_count = importadores.groupby("País").size().reset_index(name="Cantidad de Importadores")
+st.subheader("Cantidad de empresas importadoras por país")
+fig4 = px.bar(importadores_count, x="País", y="Cantidad de Importadores", barmode="stack")
 st.plotly_chart(fig4, use_container_width=True)
 
 # Gráfico 5 - Tamaño de restaurantes
