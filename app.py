@@ -38,8 +38,13 @@ fig4 = px.bar(importadores_count, x="País", y="Cantidad de Importadores", barmo
 st.plotly_chart(fig4, use_container_width=True)
 
 # Gráfico 5 - Tamaño de restaurantes
-st.subheader("Cantidad de restaurantes por país y tamaño")
-fig5 = px.bar(tamano_restaurantes, x="País", y="Cantidad", color="Tamaño", barmode="group")
+fig5 = px.bar(
+    tamano_restaurantes,
+    x="País",
+    y="Cantidad de Restaurantes",
+    color="Tamaño",
+    barmode="group"
+)
 st.plotly_chart(fig5, use_container_width=True)
 
 # Gráfico 6 - Frecuencia de compra
